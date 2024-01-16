@@ -4,7 +4,7 @@ namespace heyaender\LaraExcelintar;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SheetReader extends \heyaender\FastExcelReader\Sheet
+class SheetReader extends \heyaender\ExcelintarReader\Sheet
 {
     private int $resultMode = 0;
 
@@ -18,7 +18,7 @@ class SheetReader extends \heyaender\FastExcelReader\Sheet
      */
     public function withHeadings(?array $headers = []): SheetReader
     {
-        $this->resultMode = \heyaender\FastExcelReader\Excel::KEYS_FIRST_ROW;
+        $this->resultMode = \heyaender\ExcelintarReader\Excel::KEYS_FIRST_ROW;
 
         return $this;
     }

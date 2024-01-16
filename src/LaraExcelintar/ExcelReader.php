@@ -2,7 +2,7 @@
 
 namespace heyaender\LaraExcelintar;
 
-class ExcelReader extends \heyaender\FastExcelReader\Excel
+class ExcelReader extends \heyaender\ExcelintarReader\Excel
 {
     /**
      * Open XLSX file for import

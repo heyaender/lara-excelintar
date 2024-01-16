@@ -7,7 +7,7 @@ namespace heyaender\LaraExcelintar;
 require_once __DIR__ . '/FakeModel.php';
 
 use Illuminate\Support\Collection;
-use heyaender\FastExcelReader\Excel as ExcelReader;
+use heyaender\ExcelintarReader\Excel as ExcelReader;
 
 final class LaraExcelintarTest extends \Orchestra\Testbench\TestCase
 {
@@ -271,7 +271,7 @@ final class LaraExcelintarTest extends \Orchestra\Testbench\TestCase
         $sheet->setColOptions('c', ['width' => 12, 'text-align' => 'center']);
         $sheet->setColWidth('d', 'auto');
 
-        $title = 'This is demo of heyaender/fast-excel-laravel';
+        $title = 'This is demo of heyaender/lara-excelintar';
         $area = $sheet->beginArea();
         $area->setValue('A2:D2', $title)
             ->applyFontSize(14)

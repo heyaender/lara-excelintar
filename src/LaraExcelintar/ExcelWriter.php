@@ -20,7 +20,7 @@ class ExcelWriter  extends \heyaender\Excelintar\Excel
     public static function create($sheets = null, ?array $options = []): ExcelWriter
     {
         if (empty($options['temp_dir'])) {
-            $tempDir = storage_path('app/tmp/fast-excel');
+            $tempDir = storage_path('app/tmp/excelintar');
             if (!\File::isDirectory($tempDir)) {
                 \File::makeDirectory($tempDir, 0777, true, true);
             }
