@@ -11,8 +11,8 @@
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
-        "heyaender/fast-excel-writer": "^4.11",
-        "heyaender/fast-excel-reader": "^2.14",
+        "heyaender/fast-excel-writer": "*",
+        "heyaender/fast-excel-reader": "*",
         "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
         "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0"
     },
