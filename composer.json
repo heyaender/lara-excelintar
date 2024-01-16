@@ -1,0 +1,33 @@
+{
+    "name": "heyaender/lara-excelintar",
+    "description": "Excel Writer untuk Laravel yang sangat cepat seperti Halilintar",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Heyaender\\LaraExcelintar\\": "./src/LaraExcelintar"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "heyaender/fast-excel-writer": "^4.11",
+        "heyaender/fast-excel-reader": "^2.14",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "heyaender\\LaraExcelintar\\Providers\\ExcelServiceProvider"
+            ],
+            "aliases": {
+                "Excel": "heyaender\\LaraExcelintar\\Facades\\Excel"
+            }
+        }
+    }
+}
